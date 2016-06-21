@@ -20,7 +20,7 @@ interface
 
 uses
   // Delphi
-  Controls, Menus, ImgList, Graphics, ActnList;
+  Controls, Menus, ImgList, Graphics, ActnList, System.Actions;
 
 
 type

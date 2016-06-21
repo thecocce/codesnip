@@ -210,7 +210,8 @@ type
     user defined sorting. Keys, values and key/value pairs are also accessible
     by index.
   }
-  TSortedDictionary<TKey,TValue> = class(TEnumerable<TPair<TKey,TValue>>)
+
+  TSortedDictionary<TKey;TValue> = class(TEnumerable<TPair<TKey,TValue>>)
   public
     type
       {
@@ -1297,7 +1298,7 @@ procedure TSortedObjectDictionary<TKey, TValue>.KeyNotify(const Key: TKey;
 begin
   inherited;
   if (Action = cnRemoved) and (doOwnsKeys in fOwnerships) then
-    TObject(Key).Free;
+  //TODO  TObject(Key).Free;
 end;
 
 procedure TSortedObjectDictionary<TKey, TValue>.ValueNotify(const Value: TValue;
@@ -1310,7 +1311,7 @@ procedure TSortedObjectDictionary<TKey, TValue>.ValueNotify(const Value: TValue;
 begin
   inherited;
   if (Action = cnRemoved) and (doOwnsValues in fOwnerships) then
-    TObject(Value).Free;
+  //TODO TObject(Value).Free;
 end;
 
 { TArrayEnumerator<T> }

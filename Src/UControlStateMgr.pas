@@ -21,7 +21,7 @@ interface
 
 uses
   // Delphi
-  Forms, Controls, Menus, ActnList, Classes;
+  Forms, Controls, Menus, ActnList, Classes, System.Actions;
 
 
 type

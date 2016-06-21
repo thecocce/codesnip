@@ -26,7 +26,8 @@ uses
   // Project
   Favourites.UManager, FmHelpAware, FrDetail, FrOverview, FrTitled,
   IntfNotifier, UCompileMgr, UDialogMgr, UHistory, UMainDisplayMgr, USearch,
-  UStatusBarMgr, UUpdateCheckers, UWindowSettings;
+  UStatusBarMgr, UUpdateCheckers, UWindowSettings, System.Actions,
+  System.ImageList;
 
 
 type

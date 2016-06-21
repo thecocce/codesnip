@@ -8,8 +8,8 @@ inherited MainForm: TMainForm
   Constraints.MinWidth = 480
   Menu = mnuMain
   OnResize = FormResize
-  ExplicitWidth = 613
-  ExplicitHeight = 495
+  ExplicitWidth = 621
+  ExplicitHeight = 502
   PixelsPerInch = 96
   TextHeight = 13
   object sbStatusBar: TStatusBar
@@ -306,6 +306,10 @@ inherited MainForm: TMainForm
         inherited tcViews: TTabControl
           Width = 408
           ExplicitWidth = 408
+        end
+        inherited mnuTabs: TPopupMenu
+          Left = 136
+          Top = 64
         end
       end
     end
@@ -832,9 +836,9 @@ inherited MainForm: TMainForm
       Caption = 'Close Tab'
       Hint = 'Close tab|Close the currently selected tab in the Details pane'
       ImageIndex = 38
-      ShortCut = 16499
       SecondaryShortCuts.Strings = (
         'Ctrl+W')
+      ShortCut = 16499
       OnExecute = actCloseDetailsTabExecute
       OnUpdate = actCloseDetailsTabsUpdate
     end
